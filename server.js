@@ -7,8 +7,8 @@ var io = require('socket.io').listen(server)
 var path = require('path')
 var validator = require('validator')
 var MongoClient = require('mongodb').MongoClient
-var url = 'mongodb://localhost:27017/boilerchat'
-const PORT = 80
+var url = 'mongodb+srv://Franky404:frangki12345@cluster0.u6x4y.mongodb.net/myFirstDatabase?retryWrites=true&w=majority'
+const PORT = process.env.PORT || '5000'
 
 // Connect to MongoDB
 MongoClient.connect(url, function(err, db) {
